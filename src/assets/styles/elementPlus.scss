@@ -1,0 +1,16 @@
+.select {
+	& .el-input__wrapper {
+		background-color: $background;
+		border-radius: 4px;
+		box-shadow: 0 0 0 1px $colorText;
+		&:hover {
+			box-shadow: 0 0 0 1px $colorAccent !important;
+		}
+	}
+	& .el-input__inner {
+		font-size: 16px;
+		font-family: Raleway;
+		font-weight: 500;
+		color: $colorText;
+	}
+}

@@ -1,0 +1,92 @@
+@import './variables';
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 175%;
+	letter-spacing: 0.03em;
+	color: $colorText;
+	min-height: 100vh;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 6.4px;
+	color: $colorTitle;
+	margin-bottom: 82px;
+	text-align: center;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		width: 100px;
+		height: 4px;
+		bottom: -32px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		background-color: $colorAccent;
+	}
+}
+
+.text {
+	text-align: center;
+	font-size: 16px;
+	line-height: 36px;
+	letter-spacing: 1.6px;
+	max-width: 516px;
+}
